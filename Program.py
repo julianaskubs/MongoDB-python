@@ -40,11 +40,11 @@ class Program:
     def update(self):
         dbMg = self.client.local
         try:
-            upd = dbMg.customers.update({'metadata.register': 78799901},
-                                        {"$set": {
-                                            'metadata.phone': '888-444-333',
-                                            'metadata.age': 25}
-                                         })
+            dbMg.customers.update({'metadata.register': 78799901},
+                                  {"$set": {
+                                      'metadata.phone': '888-444-333',
+                                      'metadata.age': 25
+                                  }})
             return dict(message='Ok')
         except Exception as e:
             return dict(message=e.message)
@@ -52,7 +52,7 @@ class Program:
     def delete(self):
         dbMg = self.client.local
         try:
-            rem = dbMg.customers.remove({'metadata.register': 9876543})
+            dbMg.customers.remove({'metadata.register': 9876543})
             return dict(message='Ok')
         except Exception as e:
             return dict(message=e.message)
