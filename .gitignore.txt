@@ -1,3 +1,7 @@
 logs/*
 *.pyc
 *.pid
+.idea/
+*.xml
+*.iml
+
