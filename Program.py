@@ -13,7 +13,7 @@ class Program:
 
     def create(self):
         lista = [dict(name='Jessica', age=25, register=33377789, phone='555-777-999'),
-                 dict(name='Caio', age=26, register=78799901, phone='566-888-000'),
+                 dict(name='Caio', age=23, register=78799901, phone='566-888-000'),
                  dict(name='Fernando', age=24, register=9876543, phone='555-798-000')]
         for l in lista:
             self.newcustomer = Customer(l['name'], l['age'], l['register'], l['phone'])
