@@ -62,18 +62,17 @@ class Program:
 
 if __name__ == '__main__':
 
-    Program().create()
-
-    Program().read()
-
-    result_upd = Program().update()
+    P = Program()
+    P.create()
+    P.read()
+    result_upd = P.update()
     print result_upd
 
-    Program().read()
+    P.read()
 
-    result_del = Program().delete()
+    result_del = P.delete()
     print result_del
 
-    Program().read()
+    P.read()
 
-    Program().close()
+    P.close()
