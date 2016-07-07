@@ -1,8 +1,0 @@
-logs/*
-*.pyc
-*.pid
-.idea/
-*.xml
-*.iml
-.idea/vcs.xml
-
